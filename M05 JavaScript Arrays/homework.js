@@ -24,8 +24,8 @@ function incrementarPorUno(array) {
    // Retornar un arreglo con los elementos incrementados en +1.
    // Tu código:
    const miles = array.map((element) => element + 1
-    );
-    return miles
+   );
+   return miles
 }
 
 function agregarItemAlFinalDelArray(array, elemento) {
@@ -71,7 +71,7 @@ function agregarNumeros(arrayOfNums) {
    for (let index = 0; index < arrayOfNums.length; index++) {
       element = element + arrayOfNums[index];
    }
-  return element;
+return element;
 }
 
 function promedioResultadosTest(resultadosTest) {
@@ -82,7 +82,7 @@ function promedioResultadosTest(resultadosTest) {
    for (let index = 0; index < resultadosTest.length; index++) {
       element = element + resultadosTest[index];
    }
-  return element/(resultadosTest.length);
+   return element/(resultadosTest.length);
 }
 
 function numeroMasGrande(arrayOfNums) {
@@ -98,7 +98,7 @@ function numeroMasGrande(arrayOfNums) {
       else 
          mayor = menor;
    }
-  return mayor;
+   return mayor;
 }
 
 function multiplicarArgumentos() {
@@ -239,11 +239,11 @@ function breakStatement(num) {
    // Tu código:
    var arreglo = [];
    for (var i = 1; i <= 10; i++) {
-     num += 2;
-     arreglo.push(num);
-     if (num === i) {
-       return "Se interrumpió la ejecución";
-     }
+      num += 2;
+      arreglo.push(num);
+      if (num === i) {
+      return "Se interrumpió la ejecución";
+      }
    }
    return arreglo;
 } 
