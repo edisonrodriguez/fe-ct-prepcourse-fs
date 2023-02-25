@@ -190,7 +190,7 @@ describe('JAVASCRIPT IV', function () {
 
    describe('sumarLikesDeUsuario(objetoUsuario)', function () {
       it('Debe retornar la suma de los likes de todos los post', function () {
-         const user = {
+         const user = { 
             usernombre: 'Jhon Doe',
             password: 'JavaScript es genial!',
             posts: [
