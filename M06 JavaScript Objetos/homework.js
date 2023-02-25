@@ -148,16 +148,15 @@ function sumarLikesDeUsuario(objetoUsuario) {
    for (const key in objetoUsuario) {
       if(Array.isArray(objetoUsuario[key])) {
          for(let i = 0; i < objetoUsuario[key].length; i++) {
-           suma +=objetoUsuario[key][i].likes
+            suma +=objetoUsuario[key][i].likes
          }
-       } else {
+      } else {
          console.log(`${key}: ${objetoUsuario[key]}`);
-       }
+      }
    }
    return suma
    
 }
-
 function agregarMetodoCalculoDescuento(objetoProducto) {
    // Agrega una propiedad al "objetoProducto" con el nombre "calcularPrecioDescuento".
    // Esta propiedad debe ser una función que multiplique el precio del producto por el porcentajeDeDescuento.
@@ -169,6 +168,14 @@ function agregarMetodoCalculoDescuento(objetoProducto) {
    // PorcentajeDeDescuento ---> 0.2
    // Precio final ---> 8
    // Tu código:
+   let descuento = null;
+   let precioFinal = null;
+   objetoProducto.calcularPrecioDescuento = function() {
+      descuento = this.precio * this.porcentajeDeDescuento;
+      precioFinal = this.precio - descuento;
+      return precioFinal;
+   }
+   return objetoProducto;
 }
 
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
